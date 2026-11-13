@@ -1,91 +1,61 @@
-# SkySimple ⛅ - Modern Weather Application
+# ⛅ SkySimple Weather App
 
-A sleek, responsive weather application inspired by modern clean design, with real-time global weather forecasting, instant search, geolocation, unit toggling (°C/°F), 7-day outlook, 24-hour hourly graphs, and customizable API providers.
+> A sleek, responsive real-time weather forecasting web application with live global city search, GPS geolocation, customizable API providers, and multi-day meteorological insights.
 
----
-
-## ✨ Features
-
-- **Pixel-Perfect UI**: Matches the SkySimple aesthetic with soft pastel sky backgrounds, rounded glass cards, vibrant weather illustrations, and clear typography.
-- **Hero Weather Card**:
-  - Live temperature & "feels like" metric.
-  - Weather condition description and dynamic SVG artwork.
-  - Daily High & Low temperatures.
-  - Formatted day & date.
-- **Detailed Atmospheric Metrics**:
-  - Humidity (%)
-  - Wind speed (km/h or mph) & 8-point compass direction (e.g. NW, SE)
-  - Atmospheric pressure (hPa)
-  - Visibility (km)
-  - Precipitation (mm)
-  - UV Index with safety rating
-- **5-Day & 7-Day Extended Forecasts**:
-  - Daily forecast cards with high and low temperature indicators.
-  - Visual temperature range comparison bar.
-- **24-Hour Hourly Forecast Slider**:
-  - Hour-by-hour temperature progression with time badges.
-- **Smart City Search with Autocomplete**:
-  - Fast, debounced search querying global meteorological databases.
-  - Shows city, state/province, and country name.
-- **Geolocation**:
-  - One-click "Current Location" button using HTML5 GPS geolocation and reverse geocoding.
-- **Saved Places (Bookmarks)**:
-  - Bookmark favorite cities with live weather mini-cards.
-  - Quick-switch between saved cities with a single click.
-  - Persistent state saved to `localStorage`.
-- **Unit Conversion**:
-  - Instant toggle between Celsius (°C) and Fahrenheit (°F).
-- **API Key & Provider Integration**:
-  - **Open-Meteo API (Default)**: Completely free, zero-config, highly accurate, **no API key needed**!
-  - **OpenWeatherMap API**: User can provide an OpenWeatherMap API key in the Settings modal with automatic fallback if the key expires or fails.
-- **Responsive Design**:
-  - Full desktop layout with sidebar navigation.
-  - Mobile layout with bottom navigation bar (matches mobile preview in design mockup).
+![SkySimple App Preview](https://img.shields.io/badge/Status-Complete-success?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
 ---
 
-## 🚀 How to Run the App
-
-### Option 1: Direct in Browser
-Simply open the `index.html` file in any modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari):
-
-```bash
-# In Windows PowerShell:
-Start-Process "C:\Users\RASHI KOIRI\.gemini\antigravity\scratch\skysimple-weather-app\index.html"
-```
-
-### Option 2: Local HTTP Server (Optional)
-If you prefer running through a local development server:
-
-```bash
-# Using Python:
-cd "C:\Users\RASHI KOIRI\.gemini\antigravity\scratch\skysimple-weather-app"
-python -m http.server 8080
-
-# Then open in browser:
-http://localhost:8080
-```
+## 📖 Table of Contents
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Visual Design & UI](#-visual-design--ui)
+- [Weather APIs & Keys](#-weather-apis--keys)
+- [Project Architecture](#-project-architecture)
+- [Getting Started](#-getting-started)
+- [How It Works](#-how-it-works)
+- [License](#-license)
 
 ---
 
-## 🔑 API Keys & Settings
-
-Click on **API Settings** in the sidebar (or click the avatar icon on mobile/top right) to open the configuration modal:
-
-1. **Default Mode (Open-Meteo)**:
-   - Works immediately out-of-the-box without requiring any signup or key.
-2. **OpenWeatherMap Mode**:
-   - Select OpenWeatherMap and paste your API key from [openweathermap.org](https://home.openweathermap.org/users/sign_up).
-   - If an API key is ever invalid or rate-limited, SkySimple will seamlessly fall back to Open-Meteo so you never see a broken screen.
+## 🌟 Overview
+**SkySimple** provides accurate atmospheric data in an elegant, distraction-free interface. Designed to look clean across desktop and mobile screens, it offers immediate current conditions, 24-hour hourly projections, and extended 5-day / 7-day outlooks.
 
 ---
 
-## 📁 File Structure
+## 🚀 Key Features
+- **⚡ Real-Time Meteorological Data**: Live temperature, feels like, humidity %, wind speed & direction, pressure, visibility, precipitation, and UV index.
+- **🔍 Smart Global City Search**: Instant debounced search with live geocoding suggestions.
+- **📍 GPS Geolocation**: Instant local weather via browser GPS coordinates.
+- **📅 5-Day & 7-Day Forecasts**: Visual high/low indicators with weather art.
+- **🕒 24-Hour Hourly Timeline**: Interactive hourly temperature slider.
+- **⭐ Saved Places**: Bookmark favorite cities with localStorage persistence.
+- **🌡️ Unit Conversion**: 1-click switcher between Celsius (°C) and Fahrenheit (°F).
+- **🔑 Dual API Support**: Open-Meteo (zero key required) + OpenWeatherMap (custom key support with auto-fallback).
 
-```
+---
+
+## 📁 Project Architecture
+```text
 skysimple-weather-app/
-├── index.html       # Semantic HTML5 layout (Sidebar, Hero, Details, Forecast, Modals)
-├── style.css        # Clean CSS3 design system, responsive breakpoints & animations
-├── app.js           # Weather engine, API integrations, geocoding & state management
-└── README.md        # Documentation and usage guide
+├── index.html           # Main semantic HTML5 markup & dashboard views
+├── style.css            # Responsive CSS3 styling, grid layouts & animations
+├── app.js               # Application state, API fetchers, SVG icons & DOM engine
+├── generate_readme.py   # Python script to regenerate this documentation
+├── generate_readme.js   # Node.js script to regenerate this documentation
+└── README.md            # Comprehensive project documentation
 ```
+
+---
+
+## 💻 Getting Started
+Simply double-click `index.html` to open the app directly in any web browser!
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.
